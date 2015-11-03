@@ -75,7 +75,7 @@
 				v = [v dataUsingEncoding:NSUTF8StringEncoding];
 			}
 		} else {
-			v = [[v description] dataUsingEncoding:NSUTF8StringEncoding];
+			//v = [[v description] dataUsingEncoding:NSUTF8StringEncoding];
 		}
 		
 		if(isFile) {

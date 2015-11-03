@@ -19,11 +19,13 @@
 
 - (void)loginRequestWithEmail:(NSString *)email password:(NSString *)password gbid:(NSString *)gbid completionHandler:(loginCompletionHandler)handle{
     
+    /*
     [self.loginTask cancel];
     self.session = nil;
     self.loginTask = nil;
-    
+    */
     NSURLSession *session = [NSURLSession sharedSession];
+    self.session = session;
     
     NSString *url = @"http://moran.chinacloudapp.cn/moran/web/user/login";
     

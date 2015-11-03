@@ -10,12 +10,16 @@
 #import "MBProgressHUD.h"
 #import "LZMLoginRequest.h"
 #import "LZMRegisterViewController.h"
+#import "AppDelegate.h"
+#import "LZMGlobal.h"
+#import "LZMHeadimageRequest.h"
 @interface LZMLoginViewControllers ()<UITextFieldDelegate>
 
 @property (weak, nonatomic) IBOutlet UITextField *emailTextfield;
 
 @property (weak, nonatomic) IBOutlet UITextField *passwordTextfield;
 @property (nonatomic, strong) LZMLoginRequest *loginRequest;
+@property (nonatomic, strong) LZMHeadimageRequest *headImageRequest;
 @end
 
 @implementation LZMLoginViewControllers
@@ -75,10 +79,27 @@
                 [self showError:@"login error"];
             }else{
                 [self showError:request.user.loginReturnMessage];
+                if ([request.user.loginReturnMessage isEqualToString:@"Login success"]) {
+                    
+                    [LZMGlobal sharedglobal].user = request.user;
+                    [LZMGlobal sharedglobal].user.email = self.emailTextfield.text;
+                    
+                    [self.headImageRequest headImageRequest];
+                    AppDelegate *appDelegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
+                    
+                    [appDelegate loadMainViewWithController:self];
+                }
             }
         });
     }];
     
+}
+
+- (LZMHeadimageRequest *)headImageRequest{
+    if (!_headImageRequest) {
+        _headImageRequest = [[LZMHeadimageRequest alloc] init];
+    }
+    return _headImageRequest;
 }
 
 - (LZMLoginRequest *)loginRequest{

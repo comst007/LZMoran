@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface LZMMyViewController : UIViewController
+@interface LZMMyViewController : UITableViewController
 
 @end

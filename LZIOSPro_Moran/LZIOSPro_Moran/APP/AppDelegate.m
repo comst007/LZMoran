@@ -7,16 +7,85 @@
 //
 
 #import "AppDelegate.h"
-
+#import "LZMMyViewController.h"
+#import "LZMLoginViewControllers.h"
 @interface AppDelegate ()
+@property (nonatomic, strong) LZMLoginViewControllers *loginVC;
+@property (nonatomic, strong) UITabBarController *tabBarVC;
 
 @end
 
 @implementation AppDelegate
 
 
+- (void)loadLoginAndRegiesterViewController{
+    
+    UIStoryboard *SB = [UIStoryboard storyboardWithName:@"LZMLoginAndRegister" bundle:[NSBundle mainBundle]];
+    
+    self.loginVC = [SB instantiateViewControllerWithIdentifier:@"LoginStoryboard"];
+    
+    self.window.backgroundColor = [UIColor whiteColor];
+    self.window.rootViewController = self.loginVC;
+}
+
+- (void)loadMainViewWithController:(UIViewController*)controller{
+    
+    UIViewController *vc = [[UIViewController alloc] init];
+    UINavigationController *nvc = [[UINavigationController alloc] initWithRootViewController:vc];
+    nvc.tabBarItem.image = [UIImage imageNamed:@"square"];
+    
+    UIImage *squareImage = [UIImage imageNamed:@"square_selected"];
+    squareImage = [squareImage imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    nvc.tabBarItem.selectedImage = squareImage;
+    nvc.tabBarItem.title = @"广场";
+    
+    UIStoryboard *SB = [UIStoryboard storyboardWithName:@"LZMMy" bundle:[NSBundle mainBundle]];
+    
+    UINavigationController *myNVC = [SB instantiateViewControllerWithIdentifier:@"MyNav"];
+    
+    
+    myNVC.navigationBar.barTintColor = [[UIColor alloc] initWithRed:230/255.0 green:106/255.0 blue:58/255.0 alpha:1];
+    myNVC.tabBarItem.title = @"我的";
+    
+    UIImage *imageSelected = [UIImage imageNamed:@"my_selected"];
+    imageSelected = [imageSelected imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    
+    myNVC.tabBarItem.selectedImage = imageSelected;
+    myNVC.tabBarItem.image = [UIImage imageNamed:@"my"];
+
+    
+    self.tabBarVC = [[UITabBarController alloc] init];
+    
+    self.tabBarVC.viewControllers = @[nvc, myNVC];
+    
+    [controller presentViewController:self.tabBarVC animated:YES completion:nil];
+    
+    [UIView animateWithDuration:0.3 animations:^{
+        
+        self.loginVC.view.alpha = 0;
+        
+    } completion:^(BOOL finished) {
+        self.loginVC = nil;
+    }];
+    
+    UIButton *photoButton = [[UIButton alloc] initWithFrame:CGRectMake([UIScreen mainScreen].bounds.size.width * 0.5 - 60, -25, 120, 50)];
+    [photoButton setImage:[UIImage imageNamed:@"publish"] forState:UIControlStateNormal];
+    
+    [photoButton setImage:[UIImage imageNamed:@"publish_hover"] forState:UIControlStateHighlighted];
+    [photoButton addTarget:self action:@selector(addview:) forControlEvents:UIControlEventTouchUpInside];
+    [self.tabBarVC.tabBar addSubview:photoButton];
+    
+}
+
+- (void)addview:(UIButton *)button{
+    
+}
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    self.window = [[UIWindow alloc] initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height)];
+    [self.window makeKeyAndVisible];
+    [self loadLoginAndRegiesterViewController];
     return YES;
 }
 
