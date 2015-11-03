@@ -11,10 +11,7 @@
 		CBD6FD751BE85B48006A0E65 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CBD6FD591BE85B48006A0E65 /* AppDelegate.m */; };
 		CBD6FD761BE85B48006A0E65 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBD6FD6B1BE85B48006A0E65 /* Images.xcassets */; };
 		CBD6FD771BE85B48006A0E65 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CBD6FD6C1BE85B48006A0E65 /* LaunchScreen.xib */; };
-		CBD6FD781BE85B48006A0E65 /* Main.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBD6FD6D1BE85B48006A0E65 /* Main.xcassets */; };
-		CBD6FD791BE85B48006A0E65 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CBD6FD6F1BE85B48006A0E65 /* Info.plist */; };
 		CBD6FD7A1BE85B48006A0E65 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CBD6FD701BE85B48006A0E65 /* main.m */; };
-		CBD6FD7B1BE85B48006A0E65 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBD6FD741BE85B48006A0E65 /* Main.storyboard */; };
 		CBD6FD7E1BE85BFD006A0E65 /* LZMLoginViewControllers.m in Sources */ = {isa = PBXBuildFile; fileRef = CBD6FD7D1BE85BFD006A0E65 /* LZMLoginViewControllers.m */; };
 		CBD6FD811BE85C1F006A0E65 /* LZMMyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBD6FD801BE85C1F006A0E65 /* LZMMyViewController.m */; };
 		CBD6FD851BE85C6F006A0E65 /* LZMSquareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBD6FD841BE85C6F006A0E65 /* LZMSquareViewController.m */; };
@@ -28,9 +25,14 @@
 		CBD6FD9A1BE85D9E006A0E65 /* LZMLoginRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = CBD6FD991BE85D9E006A0E65 /* LZMLoginRequest.m */; };
 		CBD6FD9D1BE85DBA006A0E65 /* LZMRegisterRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = CBD6FD9C1BE85DBA006A0E65 /* LZMRegisterRequest.m */; };
 		CBD6FDA01BE85DCB006A0E65 /* LZMPublishRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = CBD6FD9F1BE85DCB006A0E65 /* LZMPublishRequest.m */; };
-		CBD6FDA31BE85DF3006A0E65 /* LZMMultipartForm.m in Sources */ = {isa = PBXBuildFile; fileRef = CBD6FDA21BE85DF3006A0E65 /* LZMMultipartForm.m */; };
 		CBD6FDA61BE85E0F006A0E65 /* LZMLoginRequestParser.m in Sources */ = {isa = PBXBuildFile; fileRef = CBD6FDA51BE85E0F006A0E65 /* LZMLoginRequestParser.m */; };
 		CBD6FDA91BE85E2A006A0E65 /* LZMRegisterRequestParser.m in Sources */ = {isa = PBXBuildFile; fileRef = CBD6FDA81BE85E2A006A0E65 /* LZMRegisterRequestParser.m */; };
+		CBD6FDAF1BE861EA006A0E65 /* Main.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBD6FDAE1BE861EA006A0E65 /* Main.xcassets */; };
+		CBD6FDB11BE86ED3006A0E65 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CBD6FDB01BE86ED3006A0E65 /* Info.plist */; };
+		CBD6FDC61BE873A3006A0E65 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = CBD6FDC51BE873A3006A0E65 /* MBProgressHUD.m */; };
+		CBD6FDC91BE87C47006A0E65 /* BLMultipartForm.m in Sources */ = {isa = PBXBuildFile; fileRef = CBD6FDC81BE87C47006A0E65 /* BLMultipartForm.m */; };
+		CBD6FDCC1BE8861A006A0E65 /* LZMRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBD6FDCB1BE8861A006A0E65 /* LZMRegisterViewController.m */; };
+		CBD6FDCE1BE8DD43006A0E65 /* LZMMy.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBD6FDCD1BE8DD43006A0E65 /* LZMMy.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,16 +48,13 @@
 /* Begin PBXFileReference section */
 		CBD6FD2E1BE8589B006A0E65 /* LZIOSPro_Moran.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LZIOSPro_Moran.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBD6FD471BE8589B006A0E65 /* LZIOSPro_MoranTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LZIOSPro_MoranTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CBD6FD4C1BE8589B006A0E65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CBD6FD4D1BE8589B006A0E65 /* LZIOSPro_MoranTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LZIOSPro_MoranTests.m; sourceTree = "<group>"; };
 		CBD6FD581BE85B48006A0E65 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CBD6FD591BE85B48006A0E65 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		CBD6FD6B1BE85B48006A0E65 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		CBD6FD6C1BE85B48006A0E65 /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
-		CBD6FD6D1BE85B48006A0E65 /* Main.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Main.xcassets; sourceTree = "<group>"; };
 		CBD6FD6F1BE85B48006A0E65 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CBD6FD701BE85B48006A0E65 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		CBD6FD741BE85B48006A0E65 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		CBD6FD7C1BE85BFD006A0E65 /* LZMLoginViewControllers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZMLoginViewControllers.h; sourceTree = "<group>"; };
 		CBD6FD7D1BE85BFD006A0E65 /* LZMLoginViewControllers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZMLoginViewControllers.m; sourceTree = "<group>"; };
 		CBD6FD7F1BE85C1F006A0E65 /* LZMMyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZMMyViewController.h; sourceTree = "<group>"; };
@@ -79,12 +78,19 @@
 		CBD6FD9C1BE85DBA006A0E65 /* LZMRegisterRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZMRegisterRequest.m; sourceTree = "<group>"; };
 		CBD6FD9E1BE85DCB006A0E65 /* LZMPublishRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZMPublishRequest.h; sourceTree = "<group>"; };
 		CBD6FD9F1BE85DCB006A0E65 /* LZMPublishRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZMPublishRequest.m; sourceTree = "<group>"; };
-		CBD6FDA11BE85DF3006A0E65 /* LZMMultipartForm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZMMultipartForm.h; sourceTree = "<group>"; };
-		CBD6FDA21BE85DF3006A0E65 /* LZMMultipartForm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZMMultipartForm.m; sourceTree = "<group>"; };
 		CBD6FDA41BE85E0F006A0E65 /* LZMLoginRequestParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZMLoginRequestParser.h; sourceTree = "<group>"; };
 		CBD6FDA51BE85E0F006A0E65 /* LZMLoginRequestParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZMLoginRequestParser.m; sourceTree = "<group>"; };
 		CBD6FDA71BE85E2A006A0E65 /* LZMRegisterRequestParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZMRegisterRequestParser.h; sourceTree = "<group>"; };
 		CBD6FDA81BE85E2A006A0E65 /* LZMRegisterRequestParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZMRegisterRequestParser.m; sourceTree = "<group>"; };
+		CBD6FDAE1BE861EA006A0E65 /* Main.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Main.xcassets; sourceTree = "<group>"; };
+		CBD6FDB01BE86ED3006A0E65 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CBD6FDC41BE873A3006A0E65 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		CBD6FDC51BE873A3006A0E65 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		CBD6FDC71BE87C47006A0E65 /* BLMultipartForm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLMultipartForm.h; sourceTree = "<group>"; };
+		CBD6FDC81BE87C47006A0E65 /* BLMultipartForm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLMultipartForm.m; sourceTree = "<group>"; };
+		CBD6FDCA1BE8861A006A0E65 /* LZMRegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZMRegisterViewController.h; sourceTree = "<group>"; };
+		CBD6FDCB1BE8861A006A0E65 /* LZMRegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZMRegisterViewController.m; sourceTree = "<group>"; };
+		CBD6FDCD1BE8DD43006A0E65 /* LZMMy.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LZMMy.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,17 +148,9 @@
 			isa = PBXGroup;
 			children = (
 				CBD6FD4D1BE8589B006A0E65 /* LZIOSPro_MoranTests.m */,
-				CBD6FD4B1BE8589B006A0E65 /* Supporting Files */,
+				CBD6FDB01BE86ED3006A0E65 /* Info.plist */,
 			);
 			path = LZIOSPro_MoranTests;
-			sourceTree = "<group>";
-		};
-		CBD6FD4B1BE8589B006A0E65 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				CBD6FD4C1BE8589B006A0E65 /* Info.plist */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		CBD6FD571BE85B48006A0E65 /* APP */ = {
@@ -179,6 +177,8 @@
 			children = (
 				CBD6FD7C1BE85BFD006A0E65 /* LZMLoginViewControllers.h */,
 				CBD6FD7D1BE85BFD006A0E65 /* LZMLoginViewControllers.m */,
+				CBD6FDCA1BE8861A006A0E65 /* LZMRegisterViewController.h */,
+				CBD6FDCB1BE8861A006A0E65 /* LZMRegisterViewController.m */,
 			);
 			path = LoginAndRegister;
 			sourceTree = "<group>";
@@ -247,6 +247,7 @@
 		CBD6FD631BE85B48006A0E65 /* Public */ = {
 			isa = PBXGroup;
 			children = (
+				CBD6FDC31BE873A3006A0E65 /* MBProgressHUD */,
 				CBD6FD641BE85B48006A0E65 /* Network */,
 			);
 			path = Public;
@@ -305,8 +306,8 @@
 		CBD6FD691BE85B48006A0E65 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
-				CBD6FDA11BE85DF3006A0E65 /* LZMMultipartForm.h */,
-				CBD6FDA21BE85DF3006A0E65 /* LZMMultipartForm.m */,
+				CBD6FDC71BE87C47006A0E65 /* BLMultipartForm.h */,
+				CBD6FDC81BE87C47006A0E65 /* BLMultipartForm.m */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -316,7 +317,7 @@
 			children = (
 				CBD6FD6B1BE85B48006A0E65 /* Images.xcassets */,
 				CBD6FD6C1BE85B48006A0E65 /* LaunchScreen.xib */,
-				CBD6FD6D1BE85B48006A0E65 /* Main.xcassets */,
+				CBD6FDAE1BE861EA006A0E65 /* Main.xcassets */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -351,10 +352,10 @@
 		CBD6FD731BE85B48006A0E65 /* Storyboard */ = {
 			isa = PBXGroup;
 			children = (
-				CBD6FD741BE85B48006A0E65 /* Main.storyboard */,
 				CBD6FD861BE85CDB006A0E65 /* LZMLoginAndRegister.storyboard */,
 				CBD6FD881BE85CF3006A0E65 /* LZMSquare.storyboard */,
 				CBD6FD8A1BE85D01006A0E65 /* LZMPublish.storyboard */,
+				CBD6FDCD1BE8DD43006A0E65 /* LZMMy.storyboard */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -366,6 +367,15 @@
 				CBD6FD841BE85C6F006A0E65 /* LZMSquareViewController.m */,
 			);
 			path = Publish;
+			sourceTree = "<group>";
+		};
+		CBD6FDC31BE873A3006A0E65 /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				CBD6FDC41BE873A3006A0E65 /* MBProgressHUD.h */,
+				CBD6FDC51BE873A3006A0E65 /* MBProgressHUD.m */,
+			);
+			path = MBProgressHUD;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -449,11 +459,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CBD6FD791BE85B48006A0E65 /* Info.plist in Resources */,
-				CBD6FD7B1BE85B48006A0E65 /* Main.storyboard in Resources */,
+				CBD6FDAF1BE861EA006A0E65 /* Main.xcassets in Resources */,
+				CBD6FDCE1BE8DD43006A0E65 /* LZMMy.storyboard in Resources */,
 				CBD6FD771BE85B48006A0E65 /* LaunchScreen.xib in Resources */,
 				CBD6FD871BE85CDB006A0E65 /* LZMLoginAndRegister.storyboard in Resources */,
-				CBD6FD781BE85B48006A0E65 /* Main.xcassets in Resources */,
 				CBD6FD891BE85CF3006A0E65 /* LZMSquare.storyboard in Resources */,
 				CBD6FD8B1BE85D01006A0E65 /* LZMPublish.storyboard in Resources */,
 				CBD6FD761BE85B48006A0E65 /* Images.xcassets in Resources */,
@@ -464,6 +473,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBD6FDB11BE86ED3006A0E65 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -481,14 +491,16 @@
 				CBD6FD911BE85D4F006A0E65 /* LZMPictureModel.m in Sources */,
 				CBD6FDA91BE85E2A006A0E65 /* LZMRegisterRequestParser.m in Sources */,
 				CBD6FDA01BE85DCB006A0E65 /* LZMPublishRequest.m in Sources */,
+				CBD6FDCC1BE8861A006A0E65 /* LZMRegisterViewController.m in Sources */,
 				CBD6FD9A1BE85D9E006A0E65 /* LZMLoginRequest.m in Sources */,
 				CBD6FD851BE85C6F006A0E65 /* LZMSquareViewController.m in Sources */,
 				CBD6FD9D1BE85DBA006A0E65 /* LZMRegisterRequest.m in Sources */,
+				CBD6FDC91BE87C47006A0E65 /* BLMultipartForm.m in Sources */,
 				CBD6FD8E1BE85D28006A0E65 /* LZMPublishCell.m in Sources */,
 				CBD6FD7A1BE85B48006A0E65 /* main.m in Sources */,
 				CBD6FD751BE85B48006A0E65 /* AppDelegate.m in Sources */,
 				CBD6FDA61BE85E0F006A0E65 /* LZMLoginRequestParser.m in Sources */,
-				CBD6FDA31BE85DF3006A0E65 /* LZMMultipartForm.m in Sources */,
+				CBD6FDC61BE873A3006A0E65 /* MBProgressHUD.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

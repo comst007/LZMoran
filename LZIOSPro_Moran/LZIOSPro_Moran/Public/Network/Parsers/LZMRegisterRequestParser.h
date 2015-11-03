@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import "LZMUserModel.h"
 @interface LZMRegisterRequestParser : NSObject
-
+- (LZMUserModel *)parseJson:(NSData *)jsonData;
 @end

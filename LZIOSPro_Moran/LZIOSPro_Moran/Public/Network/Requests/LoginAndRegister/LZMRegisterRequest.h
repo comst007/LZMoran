@@ -7,7 +7,20 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "LZMUserModel.h"
+@class LZMRegisterRequest;
+typedef void (^registerCompletionHandler)(LZMRegisterRequest *request);
 
 @interface LZMRegisterRequest : NSObject
+
+@property (nonatomic, strong)  LZMUserModel *user;
+@property (nonatomic, strong) NSError *error;
+
+- (void)registerRequestWithUserName:(NSString *)username
+                           email:(NSString *)email
+                        password:(NSString *)password
+                            gbid:(NSString *)gbid
+               completionHandler:(registerCompletionHandler)handle;
+
 
 @end
