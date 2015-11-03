@@ -1,0 +1,679 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CBD6FD4E1BE8589B006A0E65 /* LZIOSPro_MoranTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CBD6FD4D1BE8589B006A0E65 /* LZIOSPro_MoranTests.m */; };
+		CBD6FD751BE85B48006A0E65 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CBD6FD591BE85B48006A0E65 /* AppDelegate.m */; };
+		CBD6FD761BE85B48006A0E65 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBD6FD6B1BE85B48006A0E65 /* Images.xcassets */; };
+		CBD6FD771BE85B48006A0E65 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CBD6FD6C1BE85B48006A0E65 /* LaunchScreen.xib */; };
+		CBD6FD781BE85B48006A0E65 /* Main.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBD6FD6D1BE85B48006A0E65 /* Main.xcassets */; };
+		CBD6FD791BE85B48006A0E65 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CBD6FD6F1BE85B48006A0E65 /* Info.plist */; };
+		CBD6FD7A1BE85B48006A0E65 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CBD6FD701BE85B48006A0E65 /* main.m */; };
+		CBD6FD7B1BE85B48006A0E65 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBD6FD741BE85B48006A0E65 /* Main.storyboard */; };
+		CBD6FD7E1BE85BFD006A0E65 /* LZMLoginViewControllers.m in Sources */ = {isa = PBXBuildFile; fileRef = CBD6FD7D1BE85BFD006A0E65 /* LZMLoginViewControllers.m */; };
+		CBD6FD811BE85C1F006A0E65 /* LZMMyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBD6FD801BE85C1F006A0E65 /* LZMMyViewController.m */; };
+		CBD6FD851BE85C6F006A0E65 /* LZMSquareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBD6FD841BE85C6F006A0E65 /* LZMSquareViewController.m */; };
+		CBD6FD871BE85CDB006A0E65 /* LZMLoginAndRegister.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBD6FD861BE85CDB006A0E65 /* LZMLoginAndRegister.storyboard */; };
+		CBD6FD891BE85CF3006A0E65 /* LZMSquare.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBD6FD881BE85CF3006A0E65 /* LZMSquare.storyboard */; };
+		CBD6FD8B1BE85D01006A0E65 /* LZMPublish.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBD6FD8A1BE85D01006A0E65 /* LZMPublish.storyboard */; };
+		CBD6FD8E1BE85D28006A0E65 /* LZMPublishCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CBD6FD8D1BE85D28006A0E65 /* LZMPublishCell.m */; };
+		CBD6FD911BE85D4F006A0E65 /* LZMPictureModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CBD6FD901BE85D4F006A0E65 /* LZMPictureModel.m */; };
+		CBD6FD941BE85D60006A0E65 /* LZMSquareModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CBD6FD931BE85D60006A0E65 /* LZMSquareModel.m */; };
+		CBD6FD971BE85D70006A0E65 /* LZMUserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CBD6FD961BE85D70006A0E65 /* LZMUserModel.m */; };
+		CBD6FD9A1BE85D9E006A0E65 /* LZMLoginRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = CBD6FD991BE85D9E006A0E65 /* LZMLoginRequest.m */; };
+		CBD6FD9D1BE85DBA006A0E65 /* LZMRegisterRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = CBD6FD9C1BE85DBA006A0E65 /* LZMRegisterRequest.m */; };
+		CBD6FDA01BE85DCB006A0E65 /* LZMPublishRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = CBD6FD9F1BE85DCB006A0E65 /* LZMPublishRequest.m */; };
+		CBD6FDA31BE85DF3006A0E65 /* LZMMultipartForm.m in Sources */ = {isa = PBXBuildFile; fileRef = CBD6FDA21BE85DF3006A0E65 /* LZMMultipartForm.m */; };
+		CBD6FDA61BE85E0F006A0E65 /* LZMLoginRequestParser.m in Sources */ = {isa = PBXBuildFile; fileRef = CBD6FDA51BE85E0F006A0E65 /* LZMLoginRequestParser.m */; };
+		CBD6FDA91BE85E2A006A0E65 /* LZMRegisterRequestParser.m in Sources */ = {isa = PBXBuildFile; fileRef = CBD6FDA81BE85E2A006A0E65 /* LZMRegisterRequestParser.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CBD6FD481BE8589B006A0E65 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CBD6FD261BE8589B006A0E65 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CBD6FD2D1BE8589B006A0E65;
+			remoteInfo = LZIOSPro_Moran;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CBD6FD2E1BE8589B006A0E65 /* LZIOSPro_Moran.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LZIOSPro_Moran.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBD6FD471BE8589B006A0E65 /* LZIOSPro_MoranTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LZIOSPro_MoranTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBD6FD4C1BE8589B006A0E65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CBD6FD4D1BE8589B006A0E65 /* LZIOSPro_MoranTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LZIOSPro_MoranTests.m; sourceTree = "<group>"; };
+		CBD6FD581BE85B48006A0E65 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CBD6FD591BE85B48006A0E65 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CBD6FD6B1BE85B48006A0E65 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		CBD6FD6C1BE85B48006A0E65 /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
+		CBD6FD6D1BE85B48006A0E65 /* Main.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Main.xcassets; sourceTree = "<group>"; };
+		CBD6FD6F1BE85B48006A0E65 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CBD6FD701BE85B48006A0E65 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CBD6FD741BE85B48006A0E65 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		CBD6FD7C1BE85BFD006A0E65 /* LZMLoginViewControllers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZMLoginViewControllers.h; sourceTree = "<group>"; };
+		CBD6FD7D1BE85BFD006A0E65 /* LZMLoginViewControllers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZMLoginViewControllers.m; sourceTree = "<group>"; };
+		CBD6FD7F1BE85C1F006A0E65 /* LZMMyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZMMyViewController.h; sourceTree = "<group>"; };
+		CBD6FD801BE85C1F006A0E65 /* LZMMyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZMMyViewController.m; sourceTree = "<group>"; };
+		CBD6FD831BE85C6F006A0E65 /* LZMSquareViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZMSquareViewController.h; sourceTree = "<group>"; };
+		CBD6FD841BE85C6F006A0E65 /* LZMSquareViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZMSquareViewController.m; sourceTree = "<group>"; };
+		CBD6FD861BE85CDB006A0E65 /* LZMLoginAndRegister.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LZMLoginAndRegister.storyboard; sourceTree = "<group>"; };
+		CBD6FD881BE85CF3006A0E65 /* LZMSquare.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LZMSquare.storyboard; sourceTree = "<group>"; };
+		CBD6FD8A1BE85D01006A0E65 /* LZMPublish.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LZMPublish.storyboard; sourceTree = "<group>"; };
+		CBD6FD8C1BE85D28006A0E65 /* LZMPublishCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZMPublishCell.h; sourceTree = "<group>"; };
+		CBD6FD8D1BE85D28006A0E65 /* LZMPublishCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZMPublishCell.m; sourceTree = "<group>"; };
+		CBD6FD8F1BE85D4F006A0E65 /* LZMPictureModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZMPictureModel.h; sourceTree = "<group>"; };
+		CBD6FD901BE85D4F006A0E65 /* LZMPictureModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZMPictureModel.m; sourceTree = "<group>"; };
+		CBD6FD921BE85D60006A0E65 /* LZMSquareModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZMSquareModel.h; sourceTree = "<group>"; };
+		CBD6FD931BE85D60006A0E65 /* LZMSquareModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZMSquareModel.m; sourceTree = "<group>"; };
+		CBD6FD951BE85D70006A0E65 /* LZMUserModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZMUserModel.h; sourceTree = "<group>"; };
+		CBD6FD961BE85D70006A0E65 /* LZMUserModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZMUserModel.m; sourceTree = "<group>"; };
+		CBD6FD981BE85D9E006A0E65 /* LZMLoginRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZMLoginRequest.h; sourceTree = "<group>"; };
+		CBD6FD991BE85D9E006A0E65 /* LZMLoginRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZMLoginRequest.m; sourceTree = "<group>"; };
+		CBD6FD9B1BE85DBA006A0E65 /* LZMRegisterRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZMRegisterRequest.h; sourceTree = "<group>"; };
+		CBD6FD9C1BE85DBA006A0E65 /* LZMRegisterRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZMRegisterRequest.m; sourceTree = "<group>"; };
+		CBD6FD9E1BE85DCB006A0E65 /* LZMPublishRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZMPublishRequest.h; sourceTree = "<group>"; };
+		CBD6FD9F1BE85DCB006A0E65 /* LZMPublishRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZMPublishRequest.m; sourceTree = "<group>"; };
+		CBD6FDA11BE85DF3006A0E65 /* LZMMultipartForm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZMMultipartForm.h; sourceTree = "<group>"; };
+		CBD6FDA21BE85DF3006A0E65 /* LZMMultipartForm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZMMultipartForm.m; sourceTree = "<group>"; };
+		CBD6FDA41BE85E0F006A0E65 /* LZMLoginRequestParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZMLoginRequestParser.h; sourceTree = "<group>"; };
+		CBD6FDA51BE85E0F006A0E65 /* LZMLoginRequestParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZMLoginRequestParser.m; sourceTree = "<group>"; };
+		CBD6FDA71BE85E2A006A0E65 /* LZMRegisterRequestParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZMRegisterRequestParser.h; sourceTree = "<group>"; };
+		CBD6FDA81BE85E2A006A0E65 /* LZMRegisterRequestParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZMRegisterRequestParser.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CBD6FD2B1BE8589B006A0E65 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBD6FD441BE8589B006A0E65 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CBD6FD251BE8589B006A0E65 = {
+			isa = PBXGroup;
+			children = (
+				CBD6FD301BE8589B006A0E65 /* LZIOSPro_Moran */,
+				CBD6FD4A1BE8589B006A0E65 /* LZIOSPro_MoranTests */,
+				CBD6FD2F1BE8589B006A0E65 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CBD6FD2F1BE8589B006A0E65 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CBD6FD2E1BE8589B006A0E65 /* LZIOSPro_Moran.app */,
+				CBD6FD471BE8589B006A0E65 /* LZIOSPro_MoranTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CBD6FD301BE8589B006A0E65 /* LZIOSPro_Moran */ = {
+			isa = PBXGroup;
+			children = (
+				CBD6FD571BE85B48006A0E65 /* APP */,
+				CBD6FD5A1BE85B48006A0E65 /* Controllers */,
+				CBD6FD5E1BE85B48006A0E65 /* Library */,
+				CBD6FD5F1BE85B48006A0E65 /* Models */,
+				CBD6FD631BE85B48006A0E65 /* Public */,
+				CBD6FD6A1BE85B48006A0E65 /* Resources */,
+				CBD6FD6E1BE85B48006A0E65 /* Supproting files */,
+				CBD6FD711BE85B48006A0E65 /* Views */,
+			);
+			path = LZIOSPro_Moran;
+			sourceTree = "<group>";
+		};
+		CBD6FD4A1BE8589B006A0E65 /* LZIOSPro_MoranTests */ = {
+			isa = PBXGroup;
+			children = (
+				CBD6FD4D1BE8589B006A0E65 /* LZIOSPro_MoranTests.m */,
+				CBD6FD4B1BE8589B006A0E65 /* Supporting Files */,
+			);
+			path = LZIOSPro_MoranTests;
+			sourceTree = "<group>";
+		};
+		CBD6FD4B1BE8589B006A0E65 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CBD6FD4C1BE8589B006A0E65 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CBD6FD571BE85B48006A0E65 /* APP */ = {
+			isa = PBXGroup;
+			children = (
+				CBD6FD581BE85B48006A0E65 /* AppDelegate.h */,
+				CBD6FD591BE85B48006A0E65 /* AppDelegate.m */,
+			);
+			path = APP;
+			sourceTree = "<group>";
+		};
+		CBD6FD5A1BE85B48006A0E65 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CBD6FD5B1BE85B48006A0E65 /* LoginAndRegister */,
+				CBD6FD5C1BE85B48006A0E65 /* My */,
+				CBD6FD5D1BE85B48006A0E65 /* Square */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		CBD6FD5B1BE85B48006A0E65 /* LoginAndRegister */ = {
+			isa = PBXGroup;
+			children = (
+				CBD6FD7C1BE85BFD006A0E65 /* LZMLoginViewControllers.h */,
+				CBD6FD7D1BE85BFD006A0E65 /* LZMLoginViewControllers.m */,
+			);
+			path = LoginAndRegister;
+			sourceTree = "<group>";
+		};
+		CBD6FD5C1BE85B48006A0E65 /* My */ = {
+			isa = PBXGroup;
+			children = (
+				CBD6FD7F1BE85C1F006A0E65 /* LZMMyViewController.h */,
+				CBD6FD801BE85C1F006A0E65 /* LZMMyViewController.m */,
+			);
+			path = My;
+			sourceTree = "<group>";
+		};
+		CBD6FD5D1BE85B48006A0E65 /* Square */ = {
+			isa = PBXGroup;
+			children = (
+				CBD6FD821BE85C5C006A0E65 /* Publish */,
+			);
+			path = Square;
+			sourceTree = "<group>";
+		};
+		CBD6FD5E1BE85B48006A0E65 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		CBD6FD5F1BE85B48006A0E65 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CBD6FD601BE85B48006A0E65 /* Picture */,
+				CBD6FD611BE85B48006A0E65 /* Square */,
+				CBD6FD621BE85B48006A0E65 /* User */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CBD6FD601BE85B48006A0E65 /* Picture */ = {
+			isa = PBXGroup;
+			children = (
+				CBD6FD8F1BE85D4F006A0E65 /* LZMPictureModel.h */,
+				CBD6FD901BE85D4F006A0E65 /* LZMPictureModel.m */,
+			);
+			path = Picture;
+			sourceTree = "<group>";
+		};
+		CBD6FD611BE85B48006A0E65 /* Square */ = {
+			isa = PBXGroup;
+			children = (
+				CBD6FD921BE85D60006A0E65 /* LZMSquareModel.h */,
+				CBD6FD931BE85D60006A0E65 /* LZMSquareModel.m */,
+			);
+			path = Square;
+			sourceTree = "<group>";
+		};
+		CBD6FD621BE85B48006A0E65 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				CBD6FD951BE85D70006A0E65 /* LZMUserModel.h */,
+				CBD6FD961BE85D70006A0E65 /* LZMUserModel.m */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		CBD6FD631BE85B48006A0E65 /* Public */ = {
+			isa = PBXGroup;
+			children = (
+				CBD6FD641BE85B48006A0E65 /* Network */,
+			);
+			path = Public;
+			sourceTree = "<group>";
+		};
+		CBD6FD641BE85B48006A0E65 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				CBD6FD651BE85B48006A0E65 /* Parsers */,
+				CBD6FD661BE85B48006A0E65 /* Requests */,
+				CBD6FD691BE85B48006A0E65 /* Utilities */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		CBD6FD651BE85B48006A0E65 /* Parsers */ = {
+			isa = PBXGroup;
+			children = (
+				CBD6FDA41BE85E0F006A0E65 /* LZMLoginRequestParser.h */,
+				CBD6FDA51BE85E0F006A0E65 /* LZMLoginRequestParser.m */,
+				CBD6FDA71BE85E2A006A0E65 /* LZMRegisterRequestParser.h */,
+				CBD6FDA81BE85E2A006A0E65 /* LZMRegisterRequestParser.m */,
+			);
+			path = Parsers;
+			sourceTree = "<group>";
+		};
+		CBD6FD661BE85B48006A0E65 /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				CBD6FD671BE85B48006A0E65 /* LoginAndRegister */,
+				CBD6FD681BE85B48006A0E65 /* Publish */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
+		CBD6FD671BE85B48006A0E65 /* LoginAndRegister */ = {
+			isa = PBXGroup;
+			children = (
+				CBD6FD981BE85D9E006A0E65 /* LZMLoginRequest.h */,
+				CBD6FD991BE85D9E006A0E65 /* LZMLoginRequest.m */,
+				CBD6FD9B1BE85DBA006A0E65 /* LZMRegisterRequest.h */,
+				CBD6FD9C1BE85DBA006A0E65 /* LZMRegisterRequest.m */,
+			);
+			path = LoginAndRegister;
+			sourceTree = "<group>";
+		};
+		CBD6FD681BE85B48006A0E65 /* Publish */ = {
+			isa = PBXGroup;
+			children = (
+				CBD6FD9E1BE85DCB006A0E65 /* LZMPublishRequest.h */,
+				CBD6FD9F1BE85DCB006A0E65 /* LZMPublishRequest.m */,
+			);
+			path = Publish;
+			sourceTree = "<group>";
+		};
+		CBD6FD691BE85B48006A0E65 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				CBD6FDA11BE85DF3006A0E65 /* LZMMultipartForm.h */,
+				CBD6FDA21BE85DF3006A0E65 /* LZMMultipartForm.m */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		CBD6FD6A1BE85B48006A0E65 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CBD6FD6B1BE85B48006A0E65 /* Images.xcassets */,
+				CBD6FD6C1BE85B48006A0E65 /* LaunchScreen.xib */,
+				CBD6FD6D1BE85B48006A0E65 /* Main.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		CBD6FD6E1BE85B48006A0E65 /* Supproting files */ = {
+			isa = PBXGroup;
+			children = (
+				CBD6FD6F1BE85B48006A0E65 /* Info.plist */,
+				CBD6FD701BE85B48006A0E65 /* main.m */,
+			);
+			path = "Supproting files";
+			sourceTree = "<group>";
+		};
+		CBD6FD711BE85B48006A0E65 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CBD6FD721BE85B48006A0E65 /* Cell */,
+				CBD6FD731BE85B48006A0E65 /* Storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CBD6FD721BE85B48006A0E65 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				CBD6FD8C1BE85D28006A0E65 /* LZMPublishCell.h */,
+				CBD6FD8D1BE85D28006A0E65 /* LZMPublishCell.m */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		CBD6FD731BE85B48006A0E65 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				CBD6FD741BE85B48006A0E65 /* Main.storyboard */,
+				CBD6FD861BE85CDB006A0E65 /* LZMLoginAndRegister.storyboard */,
+				CBD6FD881BE85CF3006A0E65 /* LZMSquare.storyboard */,
+				CBD6FD8A1BE85D01006A0E65 /* LZMPublish.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		CBD6FD821BE85C5C006A0E65 /* Publish */ = {
+			isa = PBXGroup;
+			children = (
+				CBD6FD831BE85C6F006A0E65 /* LZMSquareViewController.h */,
+				CBD6FD841BE85C6F006A0E65 /* LZMSquareViewController.m */,
+			);
+			path = Publish;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CBD6FD2D1BE8589B006A0E65 /* LZIOSPro_Moran */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CBD6FD511BE8589B006A0E65 /* Build configuration list for PBXNativeTarget "LZIOSPro_Moran" */;
+			buildPhases = (
+				CBD6FD2A1BE8589B006A0E65 /* Sources */,
+				CBD6FD2B1BE8589B006A0E65 /* Frameworks */,
+				CBD6FD2C1BE8589B006A0E65 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LZIOSPro_Moran;
+			productName = LZIOSPro_Moran;
+			productReference = CBD6FD2E1BE8589B006A0E65 /* LZIOSPro_Moran.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CBD6FD461BE8589B006A0E65 /* LZIOSPro_MoranTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CBD6FD541BE8589B006A0E65 /* Build configuration list for PBXNativeTarget "LZIOSPro_MoranTests" */;
+			buildPhases = (
+				CBD6FD431BE8589B006A0E65 /* Sources */,
+				CBD6FD441BE8589B006A0E65 /* Frameworks */,
+				CBD6FD451BE8589B006A0E65 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CBD6FD491BE8589B006A0E65 /* PBXTargetDependency */,
+			);
+			name = LZIOSPro_MoranTests;
+			productName = LZIOSPro_MoranTests;
+			productReference = CBD6FD471BE8589B006A0E65 /* LZIOSPro_MoranTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CBD6FD261BE8589B006A0E65 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = LZM;
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = com.comst1314;
+				TargetAttributes = {
+					CBD6FD2D1BE8589B006A0E65 = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+					CBD6FD461BE8589B006A0E65 = {
+						CreatedOnToolsVersion = 6.3.2;
+						TestTargetID = CBD6FD2D1BE8589B006A0E65;
+					};
+				};
+			};
+			buildConfigurationList = CBD6FD291BE8589B006A0E65 /* Build configuration list for PBXProject "LZIOSPro_Moran" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CBD6FD251BE8589B006A0E65;
+			productRefGroup = CBD6FD2F1BE8589B006A0E65 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CBD6FD2D1BE8589B006A0E65 /* LZIOSPro_Moran */,
+				CBD6FD461BE8589B006A0E65 /* LZIOSPro_MoranTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CBD6FD2C1BE8589B006A0E65 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBD6FD791BE85B48006A0E65 /* Info.plist in Resources */,
+				CBD6FD7B1BE85B48006A0E65 /* Main.storyboard in Resources */,
+				CBD6FD771BE85B48006A0E65 /* LaunchScreen.xib in Resources */,
+				CBD6FD871BE85CDB006A0E65 /* LZMLoginAndRegister.storyboard in Resources */,
+				CBD6FD781BE85B48006A0E65 /* Main.xcassets in Resources */,
+				CBD6FD891BE85CF3006A0E65 /* LZMSquare.storyboard in Resources */,
+				CBD6FD8B1BE85D01006A0E65 /* LZMPublish.storyboard in Resources */,
+				CBD6FD761BE85B48006A0E65 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBD6FD451BE8589B006A0E65 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CBD6FD2A1BE8589B006A0E65 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBD6FD941BE85D60006A0E65 /* LZMSquareModel.m in Sources */,
+				CBD6FD811BE85C1F006A0E65 /* LZMMyViewController.m in Sources */,
+				CBD6FD7E1BE85BFD006A0E65 /* LZMLoginViewControllers.m in Sources */,
+				CBD6FD971BE85D70006A0E65 /* LZMUserModel.m in Sources */,
+				CBD6FD911BE85D4F006A0E65 /* LZMPictureModel.m in Sources */,
+				CBD6FDA91BE85E2A006A0E65 /* LZMRegisterRequestParser.m in Sources */,
+				CBD6FDA01BE85DCB006A0E65 /* LZMPublishRequest.m in Sources */,
+				CBD6FD9A1BE85D9E006A0E65 /* LZMLoginRequest.m in Sources */,
+				CBD6FD851BE85C6F006A0E65 /* LZMSquareViewController.m in Sources */,
+				CBD6FD9D1BE85DBA006A0E65 /* LZMRegisterRequest.m in Sources */,
+				CBD6FD8E1BE85D28006A0E65 /* LZMPublishCell.m in Sources */,
+				CBD6FD7A1BE85B48006A0E65 /* main.m in Sources */,
+				CBD6FD751BE85B48006A0E65 /* AppDelegate.m in Sources */,
+				CBD6FDA61BE85E0F006A0E65 /* LZMLoginRequestParser.m in Sources */,
+				CBD6FDA31BE85DF3006A0E65 /* LZMMultipartForm.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBD6FD431BE8589B006A0E65 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBD6FD4E1BE8589B006A0E65 /* LZIOSPro_MoranTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CBD6FD491BE8589B006A0E65 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CBD6FD2D1BE8589B006A0E65 /* LZIOSPro_Moran */;
+			targetProxy = CBD6FD481BE8589B006A0E65 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		CBD6FD4F1BE8589B006A0E65 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CBD6FD501BE8589B006A0E65 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CBD6FD521BE8589B006A0E65 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "LZIOSPro_Moran/Supproting files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CBD6FD531BE8589B006A0E65 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "LZIOSPro_Moran/Supproting files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		CBD6FD551BE8589B006A0E65 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = LZIOSPro_MoranTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LZIOSPro_Moran.app/LZIOSPro_Moran";
+			};
+			name = Debug;
+		};
+		CBD6FD561BE8589B006A0E65 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = LZIOSPro_MoranTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LZIOSPro_Moran.app/LZIOSPro_Moran";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CBD6FD291BE8589B006A0E65 /* Build configuration list for PBXProject "LZIOSPro_Moran" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBD6FD4F1BE8589B006A0E65 /* Debug */,
+				CBD6FD501BE8589B006A0E65 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CBD6FD511BE8589B006A0E65 /* Build configuration list for PBXNativeTarget "LZIOSPro_Moran" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBD6FD521BE8589B006A0E65 /* Debug */,
+				CBD6FD531BE8589B006A0E65 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CBD6FD541BE8589B006A0E65 /* Build configuration list for PBXNativeTarget "LZIOSPro_MoranTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBD6FD551BE8589B006A0E65 /* Debug */,
+				CBD6FD561BE8589B006A0E65 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CBD6FD261BE8589B006A0E65 /* Project object */;
+}
