@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "LZMMyViewController.h"
 #import "LZMLoginViewControllers.h"
+#import "LZMViewDetailController.h"
 @interface AppDelegate ()
 @property (nonatomic, strong) LZMLoginViewControllers *loginVC;
 @property (nonatomic, strong) UITabBarController *tabBarVC;
@@ -30,8 +31,14 @@
 
 - (void)loadMainViewWithController:(UIViewController*)controller{
     
-    UIViewController *vc = [[UIViewController alloc] init];
+   // UIViewController *vc = [[UIViewController alloc] init];
+    UIStoryboard *vcSB = [UIStoryboard storyboardWithName:@"LZMSquare" bundle:[NSBundle mainBundle]];
+    LZMViewDetailController *vc = [vcSB instantiateViewControllerWithIdentifier:@"squareStoryboard"];
+    
+    
+    
     UINavigationController *nvc = [[UINavigationController alloc] initWithRootViewController:vc];
+    nvc.navigationBar.barTintColor = [[UIColor alloc] initWithRed:230 / 255.0 green:106/255.0 blue:58/255.0 alpha:1];
     nvc.tabBarItem.image = [UIImage imageNamed:@"square"];
     
     UIImage *squareImage = [UIImage imageNamed:@"square_selected"];

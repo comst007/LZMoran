@@ -9,5 +9,8 @@
 #import <Foundation/Foundation.h>
 
 @interface LZMPictureModel : NSObject
+@property (nonatomic, copy) NSString *pic_link;
+@property (nonatomic, copy) NSString *pic_id;
+@property (nonatomic, copy) NSString *title;
 
 @end
