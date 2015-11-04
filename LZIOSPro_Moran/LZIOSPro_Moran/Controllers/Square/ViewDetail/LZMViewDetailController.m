@@ -12,7 +12,10 @@
 #import "MBProgressHUD.h"
 #import "LZMSquareCell.h"
 #import "LZMSquareModel.h"
-@interface LZMViewDetailController ()<UITableViewDelegate, UITableViewDataSource>
+#import <CoreLocation/CoreLocation.h>
+#import "KxMenu.h"
+#import "MJRefresh.h"
+@interface LZMViewDetailController ()<UITableViewDelegate, UITableViewDataSource, CLLocationManagerDelegate>
 
 
 @property (weak, nonatomic) IBOutlet UITableView *tableview;
@@ -21,6 +24,8 @@
 @property (nonatomic, strong) NSArray *addrArray;
 @property (nonatomic, strong) NSDictionary *dataDic;
 @property (nonatomic, strong) UIButton *titleButton;
+@property (nonatomic, strong) CLLocationManager *manager;
+@property (nonatomic, strong) NSMutableDictionary *locationDic;
 @end
 
 @implementation LZMViewDetailController
@@ -39,14 +44,112 @@
     self.titleButton.titleEdgeInsets = UIEdgeInsetsMake(0, 0, 0, 40);
     self.navigationItem.titleView = self.titleButton;
    
-    self.tableview.rowHeight = 170;
+    self.tableview.rowHeight = 182;
     
     [self requestAllData];
+    
+    
+    self.locationDic = [NSMutableDictionary dictionary];
+    self.manager = [[CLLocationManager alloc] init];
+    self.manager.delegate = self;
+    self.manager.desiredAccuracy = kCLLocationAccuracyBest;
+    self.manager.distanceFilter = 1000;
+    
+    CLAuthorizationStatus status =  [CLLocationManager authorizationStatus] ;
+    if (status == kCLAuthorizationStatusNotDetermined) {
+        
+        if ([[UIDevice currentDevice].systemVersion floatValue] > 8.0) {
+            [self.manager requestWhenInUseAuthorization];
+        }
+    }else if (status == kCLAuthorizationStatusDenied || status == kCLAuthorizationStatusRestricted){
+        [self showError:@"请允许访问位置"];
+    }else{
+        [self.manager startUpdatingLocation];
+    }
+    
+    self.tableview.header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            [self.tableview.header endRefreshing];
+            [self.tableview reloadData];
+        });
+    }];
+    self.tableview.header.automaticallyChangeAlpha = YES;
+    
+    self.tableview.footer = [MJRefreshAutoNormalFooter footerWithRefreshingBlock:^{
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            [self.tableview.footer endRefreshing];
+        });
+    }];
+
 }
+
+
+- (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations{
+    
+    CLLocation *location = [locations lastObject];
+    
+    NSString *latitude = [NSString stringWithFormat:@"%f", location.coordinate.latitude];
+    NSString *longitude = [NSString stringWithFormat:@"%f", location.coordinate.longitude];
+    
+    [self.locationDic setValue:latitude forKey:@"latitude"];
+    [self.locationDic setValue:longitude forKey:@"longitude"];
+    
+    CLGeocoder *geocoder = [[CLGeocoder alloc] init];
+    
+    [geocoder reverseGeocodeLocation:location completionHandler:^(NSArray *placemarks, NSError *error) {
+        if (error) {
+            [self showError:@"location failed!"];
+        }else{
+            
+            CLPlacemark *placeItem = [placemarks firstObject];
+            NSArray *keys = [placeItem.addressDictionary allKeys];
+            for (NSString *key in keys) {
+                NSLog(@"%@ - %@", key, placeItem.addressDictionary[key]);
+            }
+            NSLog(@"formatAddress: %@", [placeItem.addressDictionary[@"FormattedAddressLines"] firstObject]);
+            [self.locationDic setValue:placeItem.addressDictionary[@"FormattedAddressLines"] forKey:@"location"];
+        }
+        
+    }];
+    
+    
+    
+    [self.manager stopUpdatingLocation];
+}
+
+- (void)locationManager:(CLLocationManager *)manager didChangeAuthorizationStatus:(CLAuthorizationStatus)status{
+    [self.manager startUpdatingLocation];
+}
+
 
 - (void)titleButtonClick:(UIButton *)button{
     
+    NSArray *menuItems = @[
+                           [KxMenuItem menuItem:@"All" image:nil target:self action:@selector(requestAllData)],
+                           [KxMenuItem menuItem:@"500m" image:nil target:self action:@selector(request500Data)],
+                           [KxMenuItem menuItem:@"1000m" image:nil target:self action:@selector(request1000Data)],
+                           [KxMenuItem menuItem:@"1500m" image:nil target:self action:@selector(request1500Data)]
+                           ];
+    UIView *superView = button.superview;
+    CGRect editFrame = button.frame;
+    CGRect rect = [superView convertRect:editFrame toView:[UIApplication sharedApplication].keyWindow];
+    
+    [KxMenu showMenuInView:[UIApplication sharedApplication].keyWindow fromRect:rect menuItems:menuItems];
+    
 }
+
+- (void)request500Data{
+    
+}
+
+- (void)request1000Data{
+    
+}
+
+- (void)request1500Data{
+    
+}
+
 
 - (void)showError:(NSString *)msg{
     

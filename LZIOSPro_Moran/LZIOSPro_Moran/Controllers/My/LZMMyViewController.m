@@ -29,6 +29,8 @@
     self.headImage.image = [LZMGlobal sharedglobal].user.image ?  [LZMGlobal sharedglobal].user.image : [UIImage imageNamed:@"bkground"];
     self.usernameLabel.text = [LZMGlobal sharedglobal].user.username;
     self.emailLabel.text = [LZMGlobal sharedglobal].user.email;
+    
+    //self.view.translatesAutoresizingMaskIntoConstraints
 }
 
 - (void)viewDidAppear:(BOOL)animated{
