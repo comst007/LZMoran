@@ -1,61 +1,35 @@
 //
-//  LZMHeadImageViewController.m
+//  LZMMainTabBarController.m
 //  LZIOSPro_Moran
 //
-//  Created by comst on 15/11/3.
+//  Created by comst on 15/11/6.
 //  Copyright (c) 2015年 com.comst1314. All rights reserved.
 //
 
-#import "LZMHeadImageViewController.h"
-#import "LZMChangeImageRequest.h"
+#import "LZMMainTabBarController.h"
 #import "MBProgressHUD.h"
-#import "LZMGlobal.h"
-@interface LZMHeadImageViewController ()<UIActionSheetDelegate, UINavigationControllerDelegate, UIImagePickerControllerDelegate>
-
-@property (weak, nonatomic) IBOutlet UIImageView *headimageview;
-@property (nonatomic, strong) LZMChangeImageRequest *headImageRequest;
+#import "LZMPublishViewController.h"
+@interface LZMMainTabBarController ()<UIActionSheetDelegate, UINavigationControllerDelegate, UIImagePickerControllerDelegate>
 @property (nonatomic, strong) UIImagePickerController *pickController;
 @end
 
-@implementation LZMHeadImageViewController
+@implementation LZMMainTabBarController
 
 - (void)viewDidLoad {
+    
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
-    self.headimageview.image = [LZMGlobal sharedglobal].user.image;
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(addview:) name:@"publishNotification" object:nil];
+    
 }
 
-
-- (IBAction)changeHeadImage:(UIBarButtonItem *)sender {
-    [self.headImageRequest headImageRequestWithImage:self.headimageview.image completionHandler:^(LZMChangeImageRequest *request) {
-        dispatch_async(dispatch_get_main_queue(), ^{
-            
-            if (request.error) {
-                [self showError:@"upload failed"];
-            }else{
-                [self showError:request.returnMsg];
-                if ([request.returnMsg isEqualToString:@"Update success"]) {
-                    [LZMGlobal sharedglobal].user.image = self.headimageview.image;
-                }
-            }
-            [self.navigationController popViewControllerAnimated:YES];
-        });
-    }];
-}
-
-
-- (IBAction)selectHeadImage:(UIButton *)sender {
+- (void)addview:(NSNotification *)noti{
+    
     UIActionSheet *sheet = [[UIActionSheet alloc] initWithTitle:nil delegate:self cancelButtonTitle:@"Cancel" destructiveButtonTitle:nil otherButtonTitles:@"camera", @"photo", nil];
     
-    [sheet showInView:self.view];
+    [sheet showInView:[UIApplication sharedApplication].keyWindow];
+    
 }
 
-- (LZMChangeImageRequest *)headImageRequest{
-    if (!_headImageRequest) {
-        _headImageRequest = [[LZMChangeImageRequest alloc] init];
-    }
-    return _headImageRequest;
-}
 
 - (void)showError:(NSString *)msg{
     
@@ -68,15 +42,6 @@
     [alert show:YES];
     [alert hide:YES afterDelay:3];
     
-}
-
-
-- (UIImagePickerController *)pickController{
-    if (!_pickController) {
-        _pickController = [[UIImagePickerController alloc] init];
-        _pickController.delegate = self;
-    }
-    return _pickController;
 }
 
 
@@ -95,15 +60,33 @@
     }
 }
 
-
 - (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker{
     [picker dismissViewControllerAnimated:YES completion:nil];
 }
 
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info{
     UIImage *image = info[UIImagePickerControllerOriginalImage];
-    self.headimageview.image = image;
-    [picker dismissViewControllerAnimated:YES completion:nil];
+     __weak typeof(self) weakSelf = self;
+    [picker dismissViewControllerAnimated:YES completion:^{
+        UIStoryboard *SB = [UIStoryboard storyboardWithName:@"LZMPublish" bundle:[NSBundle mainBundle]];
+        LZMPublishViewController *pVC = [SB instantiateViewControllerWithIdentifier:@"publishStoryboard"];
+        pVC.imagePhoto = image;
+        [weakSelf.navigationController pushViewController:pVC animated:YES];
+    }];
+}
+
+
+- (UIImagePickerController *)pickController{
+    if (!_pickController) {
+        _pickController = [[UIImagePickerController alloc] init];
+        _pickController.delegate = self;
+    }
+    return _pickController;
+}
+
+- (void)dealloc{
+    
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
 @end

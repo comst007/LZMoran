@@ -10,9 +10,10 @@
 #import "LZMMyViewController.h"
 #import "LZMLoginViewControllers.h"
 #import "LZMViewDetailController.h"
+#import "LZMMainTabBarController.h"
 @interface AppDelegate ()
 @property (nonatomic, strong) LZMLoginViewControllers *loginVC;
-@property (nonatomic, strong) UITabBarController *tabBarVC;
+@property (nonatomic, strong) LZMMainTabBarController *tabBarVC;
 
 @end
 
@@ -39,12 +40,14 @@
     
     UINavigationController *nvc = [[UINavigationController alloc] initWithRootViewController:vc];
     nvc.navigationBar.barTintColor = [[UIColor alloc] initWithRed:230 / 255.0 green:106/255.0 blue:58/255.0 alpha:1];
-    nvc.tabBarItem.image = [UIImage imageNamed:@"square"];
     
-    UIImage *squareImage = [UIImage imageNamed:@"square_selected"];
-    squareImage = [squareImage imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
-    nvc.tabBarItem.selectedImage = squareImage;
-    nvc.tabBarItem.title = @"广场";
+    //nvc.tabBarItem.image = [UIImage imageNamed:@"square"];
+    
+    //UIImage *squareImage = [UIImage imageNamed:@"square_selected"];
+    //squareImage = [squareImage imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    
+    //nvc.tabBarItem.selectedImage = squareImage;
+    //nvc.tabBarItem.title = @"广场";
     
     UIStoryboard *SB = [UIStoryboard storyboardWithName:@"LZMMy" bundle:[NSBundle mainBundle]];
     
@@ -52,19 +55,39 @@
     
     
     myNVC.navigationBar.barTintColor = [[UIColor alloc] initWithRed:230/255.0 green:106/255.0 blue:58/255.0 alpha:1];
-    myNVC.tabBarItem.title = @"我的";
+    //myNVC.tabBarItem.title = @"我的";
     
-    UIImage *imageSelected = [UIImage imageNamed:@"my_selected"];
-    imageSelected = [imageSelected imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    //UIImage *imageSelected = [UIImage imageNamed:@"my_selected"];
+    //imageSelected = [imageSelected imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     
-    myNVC.tabBarItem.selectedImage = imageSelected;
-    myNVC.tabBarItem.image = [UIImage imageNamed:@"my"];
+    //myNVC.tabBarItem.selectedImage = imageSelected;
+    //myNVC.tabBarItem.image = [UIImage imageNamed:@"my"];
 
     
-    self.tabBarVC = [[UITabBarController alloc] init];
+    self.tabBarVC = [[LZMMainTabBarController alloc] init];
     
-    self.tabBarVC.viewControllers = @[nvc, myNVC];
+   
     
+    self.tabBarVC.tabBarItemsAttributes = @[
+                                            @{
+                                                CYLTabBarItemTitle :@"广场",
+                                                CYLTabBarItemImage :@"square",
+                                                CYLTabBarItemSelectedImage:@"square_selected"
+                                                },
+                                            
+                                            @{
+                                                
+                                                CYLTabBarItemTitle :@"我的",
+                                                CYLTabBarItemImage :@"my",
+                                                CYLTabBarItemSelectedImage:@"my_selected"
+
+                                                }
+                                            
+                                            ];
+    
+     self.tabBarVC.viewControllers = @[nvc, myNVC];
+    
+    //self.window.rootViewController = self.tabBarVC;
     [controller presentViewController:self.tabBarVC animated:YES completion:nil];
     
     [UIView animateWithDuration:0.3 animations:^{
@@ -75,18 +98,9 @@
         self.loginVC = nil;
     }];
     
-    UIButton *photoButton = [[UIButton alloc] initWithFrame:CGRectMake([UIScreen mainScreen].bounds.size.width * 0.5 - 60, -25, 120, 50)];
-    [photoButton setImage:[UIImage imageNamed:@"publish"] forState:UIControlStateNormal];
-    
-    [photoButton setImage:[UIImage imageNamed:@"publish_hover"] forState:UIControlStateHighlighted];
-    [photoButton addTarget:self action:@selector(addview:) forControlEvents:UIControlEventTouchUpInside];
-    [self.tabBarVC.tabBar addSubview:photoButton];
     
 }
 
-- (void)addview:(UIButton *)button{
-    
-}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
