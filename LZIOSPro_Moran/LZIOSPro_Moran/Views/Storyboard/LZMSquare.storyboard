@@ -51,7 +51,7 @@
                                                     <rect key="frame" x="0.0" y="31" width="320" height="151"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="151" id="Vm5-Qk-MyD"/>
+                                                        <constraint firstAttribute="height" constant="151" id="H5J-Lt-FEw"/>
                                                     </constraints>
                                                     <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="aMZ-sh-A1h">
                                                         <size key="itemSize" width="140" height="151"/>
@@ -70,11 +70,16 @@
                                                                     <imageView autoresizesSubviews="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="EcZ-R4-eNf">
                                                                         <rect key="frame" x="0.0" y="10" width="140" height="95"/>
                                                                         <constraints>
-                                                                            <constraint firstAttribute="height" constant="95" id="Rpw-zo-FvH"/>
+                                                                            <constraint firstAttribute="height" constant="95" id="3Ro-Gy-0o3"/>
+                                                                            <constraint firstAttribute="width" constant="140" id="MR7-9m-okc"/>
                                                                         </constraints>
                                                                     </imageView>
                                                                     <label autoresizesSubviews="NO" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="蓦然回首，那人" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aEU-ZR-T6X">
                                                                         <rect key="frame" x="0.0" y="114" width="140" height="37"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="width" constant="140" id="D6N-UC-nLT"/>
+                                                                            <constraint firstAttribute="height" constant="37" id="yo0-uA-hYY"/>
+                                                                        </constraints>
                                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
                                                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                                         <nil key="highlightedColor"/>
@@ -84,17 +89,14 @@
                                                             </view>
                                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                             <constraints>
-                                                                <constraint firstAttribute="bottom" secondItem="aEU-ZR-T6X" secondAttribute="bottom" id="DqO-Ga-Pdp"/>
-                                                                <constraint firstAttribute="trailing" secondItem="EcZ-R4-eNf" secondAttribute="trailing" id="Udb-5l-xjA"/>
-                                                                <constraint firstItem="aEU-ZR-T6X" firstAttribute="leading" secondItem="jrf-QN-tzN" secondAttribute="leading" id="XO5-NQ-6nL"/>
-                                                                <constraint firstItem="EcZ-R4-eNf" firstAttribute="leading" secondItem="jrf-QN-tzN" secondAttribute="leading" id="aS3-IL-fAI"/>
-                                                                <constraint firstItem="aEU-ZR-T6X" firstAttribute="top" secondItem="EcZ-R4-eNf" secondAttribute="bottom" constant="9" id="ai8-MS-c15"/>
-                                                                <constraint firstAttribute="trailing" secondItem="aEU-ZR-T6X" secondAttribute="trailing" id="i5s-TC-P1H"/>
-                                                                <constraint firstItem="EcZ-R4-eNf" firstAttribute="top" secondItem="jrf-QN-tzN" secondAttribute="top" constant="10" id="tp3-qL-sbP"/>
+                                                                <constraint firstItem="aEU-ZR-T6X" firstAttribute="top" secondItem="EcZ-R4-eNf" secondAttribute="bottom" constant="9" id="6eK-SC-ErU"/>
+                                                                <constraint firstItem="EcZ-R4-eNf" firstAttribute="leading" secondItem="jrf-QN-tzN" secondAttribute="leading" id="Rl2-RW-mwS"/>
+                                                                <constraint firstItem="EcZ-R4-eNf" firstAttribute="top" secondItem="jrf-QN-tzN" secondAttribute="top" constant="10" id="S2l-kB-wvm"/>
+                                                                <constraint firstItem="aEU-ZR-T6X" firstAttribute="leading" secondItem="jrf-QN-tzN" secondAttribute="leading" id="qMn-Sd-vD1"/>
                                                             </constraints>
                                                             <size key="customSize" width="140" height="151"/>
                                                             <userDefinedRuntimeAttributes>
-                                                                <userDefinedRuntimeAttribute type="boolean" keyPath="translatesAutoresizingMaskIntoConstraints" value="NO"/>
+                                                                <userDefinedRuntimeAttribute type="boolean" keyPath="translatesAutoresizingMaskIntoConstraints" value="YES"/>
                                                             </userDefinedRuntimeAttributes>
                                                             <connections>
                                                                 <outlet property="pictureImageView" destination="EcZ-R4-eNf" id="KxE-lM-CWb"/>
@@ -110,13 +112,13 @@
                                             </subviews>
                                             <color key="backgroundColor" red="0.92156862745098034" green="0.92549019607843142" blue="0.92549019607843142" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <constraints>
-                                                <constraint firstItem="D5S-Lt-LiX" firstAttribute="leading" secondItem="jmG-4B-hfh" secondAttribute="leading" id="33K-lG-hlt"/>
+                                                <constraint firstItem="D5S-Lt-LiX" firstAttribute="centerX" secondItem="JiK-9u-jsa" secondAttribute="centerX" id="2Rm-ni-TVd"/>
+                                                <constraint firstItem="D5S-Lt-LiX" firstAttribute="top" secondItem="JiK-9u-jsa" secondAttribute="bottom" id="421-Lc-lWy"/>
                                                 <constraint firstItem="JiK-9u-jsa" firstAttribute="top" secondItem="jmG-4B-hfh" secondAttribute="top" constant="6" id="OYe-wG-5MC"/>
                                                 <constraint firstAttribute="trailing" secondItem="JiK-9u-jsa" secondAttribute="trailing" id="aAJ-tL-ghq"/>
                                                 <constraint firstItem="JiK-9u-jsa" firstAttribute="leading" secondItem="jmG-4B-hfh" secondAttribute="leading" id="bI0-qP-PJg"/>
-                                                <constraint firstItem="D5S-Lt-LiX" firstAttribute="top" secondItem="JiK-9u-jsa" secondAttribute="bottom" id="gXu-1k-qY4"/>
                                                 <constraint firstAttribute="bottom" secondItem="D5S-Lt-LiX" secondAttribute="bottom" id="k4B-om-NTi"/>
-                                                <constraint firstAttribute="trailing" secondItem="D5S-Lt-LiX" secondAttribute="trailing" id="kYI-dm-2Fr"/>
+                                                <constraint firstItem="D5S-Lt-LiX" firstAttribute="width" secondItem="JiK-9u-jsa" secondAttribute="width" id="pZT-oV-D5c"/>
                                             </constraints>
                                             <userDefinedRuntimeAttributes>
                                                 <userDefinedRuntimeAttribute type="boolean" keyPath="translatesAutoresizingMaskIntoConstraints" value="YES"/>
