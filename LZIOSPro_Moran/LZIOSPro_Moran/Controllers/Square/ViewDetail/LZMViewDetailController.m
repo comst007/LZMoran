@@ -68,6 +68,7 @@
     }
     
     self.tableview.header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
+        [self requestAllData];
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
             [self.tableview.header endRefreshing];
             [self.tableview reloadData];
@@ -107,7 +108,7 @@
                 NSLog(@"%@ - %@", key, placeItem.addressDictionary[key]);
             }
             NSLog(@"formatAddress: %@", [placeItem.addressDictionary[@"FormattedAddressLines"] firstObject]);
-            [self.locationDic setValue:placeItem.addressDictionary[@"FormattedAddressLines"] forKey:@"location"];
+            [self.locationDic setValue:[placeItem.addressDictionary[@"FormattedAddressLines"] firstObject] forKey:@"location"];
         }
         
     }];

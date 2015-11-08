@@ -36,6 +36,12 @@
 		CB0A437F1BED306D00AAC5E0 /* CYLTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB0A437B1BED306D00AAC5E0 /* CYLTabBarController.m */; };
 		CB0A43801BED306D00AAC5E0 /* CYLPlusButton.m in Sources */ = {isa = PBXBuildFile; fileRef = CB0A437D1BED306D00AAC5E0 /* CYLPlusButton.m */; };
 		CB0A43831BED30ED00AAC5E0 /* LZMPublishButton.m in Sources */ = {isa = PBXBuildFile; fileRef = CB0A43821BED30ED00AAC5E0 /* LZMPublishButton.m */; };
+		CB13FB301BEEF340005FFC94 /* LZMPublishCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CB13FB2E1BEEF340005FFC94 /* LZMPublishCell.m */; };
+		CB13FB311BEEF340005FFC94 /* LZMPublishCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB13FB2F1BEEF340005FFC94 /* LZMPublishCell.xib */; };
+		CB13FB351BEF34ED005FFC94 /* LZMPublishModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CB13FB341BEF34ED005FFC94 /* LZMPublishModel.m */; };
+		CB13FB381BEF3520005FFC94 /* LZMPublishParser.m in Sources */ = {isa = PBXBuildFile; fileRef = CB13FB371BEF3520005FFC94 /* LZMPublishParser.m */; };
+		CB13FB3B1BEF9F29005FFC94 /* LZMLocationModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CB13FB3A1BEF9F29005FFC94 /* LZMLocationModel.m */; };
+		CB13FB3E1BEF9FCE005FFC94 /* LZMLocationParser.m in Sources */ = {isa = PBXBuildFile; fileRef = CB13FB3D1BEF9FCE005FFC94 /* LZMLocationParser.m */; };
 		CBD6FD4E1BE8589B006A0E65 /* LZIOSPro_MoranTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CBD6FD4D1BE8589B006A0E65 /* LZIOSPro_MoranTests.m */; };
 		CBD6FD751BE85B48006A0E65 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CBD6FD591BE85B48006A0E65 /* AppDelegate.m */; };
 		CBD6FD761BE85B48006A0E65 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBD6FD6B1BE85B48006A0E65 /* Images.xcassets */; };
@@ -46,7 +52,6 @@
 		CBD6FD871BE85CDB006A0E65 /* LZMLoginAndRegister.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBD6FD861BE85CDB006A0E65 /* LZMLoginAndRegister.storyboard */; };
 		CBD6FD891BE85CF3006A0E65 /* LZMSquare.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBD6FD881BE85CF3006A0E65 /* LZMSquare.storyboard */; };
 		CBD6FD8B1BE85D01006A0E65 /* LZMPublish.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBD6FD8A1BE85D01006A0E65 /* LZMPublish.storyboard */; };
-		CBD6FD8E1BE85D28006A0E65 /* LZMPublishCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CBD6FD8D1BE85D28006A0E65 /* LZMPublishCell.m */; };
 		CBD6FD911BE85D4F006A0E65 /* LZMPictureModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CBD6FD901BE85D4F006A0E65 /* LZMPictureModel.m */; };
 		CBD6FD941BE85D60006A0E65 /* LZMSquareModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CBD6FD931BE85D60006A0E65 /* LZMSquareModel.m */; };
 		CBD6FD971BE85D70006A0E65 /* LZMUserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CBD6FD961BE85D70006A0E65 /* LZMUserModel.m */; };
@@ -157,6 +162,17 @@
 		CB0A437D1BED306D00AAC5E0 /* CYLPlusButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLPlusButton.m; sourceTree = "<group>"; };
 		CB0A43811BED30ED00AAC5E0 /* LZMPublishButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZMPublishButton.h; sourceTree = "<group>"; };
 		CB0A43821BED30ED00AAC5E0 /* LZMPublishButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZMPublishButton.m; sourceTree = "<group>"; };
+		CB13FB2D1BEEF340005FFC94 /* LZMPublishCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZMPublishCell.h; sourceTree = "<group>"; };
+		CB13FB2E1BEEF340005FFC94 /* LZMPublishCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZMPublishCell.m; sourceTree = "<group>"; };
+		CB13FB2F1BEEF340005FFC94 /* LZMPublishCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LZMPublishCell.xib; sourceTree = "<group>"; };
+		CB13FB331BEF34ED005FFC94 /* LZMPublishModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZMPublishModel.h; sourceTree = "<group>"; };
+		CB13FB341BEF34ED005FFC94 /* LZMPublishModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZMPublishModel.m; sourceTree = "<group>"; };
+		CB13FB361BEF3520005FFC94 /* LZMPublishParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZMPublishParser.h; sourceTree = "<group>"; };
+		CB13FB371BEF3520005FFC94 /* LZMPublishParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZMPublishParser.m; sourceTree = "<group>"; };
+		CB13FB391BEF9F29005FFC94 /* LZMLocationModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZMLocationModel.h; sourceTree = "<group>"; };
+		CB13FB3A1BEF9F29005FFC94 /* LZMLocationModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZMLocationModel.m; sourceTree = "<group>"; };
+		CB13FB3C1BEF9FCE005FFC94 /* LZMLocationParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZMLocationParser.h; sourceTree = "<group>"; };
+		CB13FB3D1BEF9FCE005FFC94 /* LZMLocationParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZMLocationParser.m; sourceTree = "<group>"; };
 		CBD6FD2E1BE8589B006A0E65 /* LZIOSPro_Moran.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LZIOSPro_Moran.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBD6FD471BE8589B006A0E65 /* LZIOSPro_MoranTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LZIOSPro_MoranTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBD6FD4D1BE8589B006A0E65 /* LZIOSPro_MoranTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LZIOSPro_MoranTests.m; sourceTree = "<group>"; };
@@ -173,8 +189,6 @@
 		CBD6FD861BE85CDB006A0E65 /* LZMLoginAndRegister.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LZMLoginAndRegister.storyboard; sourceTree = "<group>"; };
 		CBD6FD881BE85CF3006A0E65 /* LZMSquare.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LZMSquare.storyboard; sourceTree = "<group>"; };
 		CBD6FD8A1BE85D01006A0E65 /* LZMPublish.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LZMPublish.storyboard; sourceTree = "<group>"; };
-		CBD6FD8C1BE85D28006A0E65 /* LZMPublishCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZMPublishCell.h; sourceTree = "<group>"; };
-		CBD6FD8D1BE85D28006A0E65 /* LZMPublishCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZMPublishCell.m; sourceTree = "<group>"; };
 		CBD6FD8F1BE85D4F006A0E65 /* LZMPictureModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZMPictureModel.h; sourceTree = "<group>"; };
 		CBD6FD901BE85D4F006A0E65 /* LZMPictureModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZMPictureModel.m; sourceTree = "<group>"; };
 		CBD6FD921BE85D60006A0E65 /* LZMSquareModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZMSquareModel.h; sourceTree = "<group>"; };
@@ -397,6 +411,17 @@
 			path = LZTabBarController;
 			sourceTree = "<group>";
 		};
+		CB13FB321BEF34D3005FFC94 /* Publish */ = {
+			isa = PBXGroup;
+			children = (
+				CB13FB331BEF34ED005FFC94 /* LZMPublishModel.h */,
+				CB13FB341BEF34ED005FFC94 /* LZMPublishModel.m */,
+				CB13FB391BEF9F29005FFC94 /* LZMLocationModel.h */,
+				CB13FB3A1BEF9F29005FFC94 /* LZMLocationModel.m */,
+			);
+			path = Publish;
+			sourceTree = "<group>";
+		};
 		CBD6FD251BE8589B006A0E65 = {
 			isa = PBXGroup;
 			children = (
@@ -513,6 +538,7 @@
 		CBD6FD5F1BE85B48006A0E65 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				CB13FB321BEF34D3005FFC94 /* Publish */,
 				CBD6FD601BE85B48006A0E65 /* Picture */,
 				CBD6FD611BE85B48006A0E65 /* Square */,
 				CBD6FD621BE85B48006A0E65 /* User */,
@@ -575,6 +601,10 @@
 				CBD6FDA81BE85E2A006A0E65 /* LZMRegisterRequestParser.m */,
 				CBD6FDF61BE99307006A0E65 /* LZMSquareRequestParser.h */,
 				CBD6FDF71BE99307006A0E65 /* LZMSquareRequestParser.m */,
+				CB13FB361BEF3520005FFC94 /* LZMPublishParser.h */,
+				CB13FB371BEF3520005FFC94 /* LZMPublishParser.m */,
+				CB13FB3C1BEF9FCE005FFC94 /* LZMLocationParser.h */,
+				CB13FB3D1BEF9FCE005FFC94 /* LZMLocationParser.m */,
 			);
 			path = Parsers;
 			sourceTree = "<group>";
@@ -652,12 +682,13 @@
 		CBD6FD721BE85B48006A0E65 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				CBD6FD8C1BE85D28006A0E65 /* LZMPublishCell.h */,
-				CBD6FD8D1BE85D28006A0E65 /* LZMPublishCell.m */,
 				CBD6FDEC1BE984A7006A0E65 /* LZMSquareCell.h */,
 				CBD6FDED1BE984A7006A0E65 /* LZMSquareCell.m */,
 				CBD6FDEF1BE984DA006A0E65 /* LZMSquareCollectionCell.h */,
 				CBD6FDF01BE984DA006A0E65 /* LZMSquareCollectionCell.m */,
+				CB13FB2D1BEEF340005FFC94 /* LZMPublishCell.h */,
+				CB13FB2E1BEEF340005FFC94 /* LZMPublishCell.m */,
+				CB13FB2F1BEEF340005FFC94 /* LZMPublishCell.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -858,6 +889,7 @@
 				CBD6FD8B1BE85D01006A0E65 /* LZMPublish.storyboard in Resources */,
 				CB0A436A1BEA84A500AAC5E0 /* MJRefresh.bundle in Resources */,
 				CBD6FD761BE85B48006A0E65 /* Images.xcassets in Resources */,
+				CB13FB311BEEF340005FFC94 /* LZMPublishCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -879,7 +911,10 @@
 				CBD6FDD21BE8E3CE006A0E65 /* LZMGlobal.m in Sources */,
 				CBD6FDEB1BE98400006A0E65 /* LZMViewDetailController.m in Sources */,
 				CBD6FE221BE9A3B8006A0E65 /* SDWebImageManager.m in Sources */,
+				CB13FB351BEF34ED005FFC94 /* LZMPublishModel.m in Sources */,
+				CB13FB381BEF3520005FFC94 /* LZMPublishParser.m in Sources */,
 				CB0A43761BEC9DA600AAC5E0 /* LZMMainTabBarController.m in Sources */,
+				CB13FB3E1BEF9FCE005FFC94 /* LZMLocationParser.m in Sources */,
 				CBD6FE231BE9A3B8006A0E65 /* SDWebImagePrefetcher.m in Sources */,
 				CBD6FD941BE85D60006A0E65 /* LZMSquareModel.m in Sources */,
 				CBD6FDDD1BE9134C006A0E65 /* LZMHeadimageRequest.m in Sources */,
@@ -915,7 +950,6 @@
 				CBD6FE261BE9A3B8006A0E65 /* UIImage+MultiFormat.m in Sources */,
 				CBD6FD9D1BE85DBA006A0E65 /* LZMRegisterRequest.m in Sources */,
 				CBD6FDC91BE87C47006A0E65 /* BLMultipartForm.m in Sources */,
-				CBD6FD8E1BE85D28006A0E65 /* LZMPublishCell.m in Sources */,
 				CB0A436E1BEA84A500AAC5E0 /* UIView+MJExtension.m in Sources */,
 				CBD6FE1E1BE9A3B8006A0E65 /* SDWebImageCompat.m in Sources */,
 				CBD6FDEE1BE984A7006A0E65 /* LZMSquareCell.m in Sources */,
@@ -933,10 +967,12 @@
 				CB0A43631BEA84A500AAC5E0 /* MJRefreshAutoStateFooter.m in Sources */,
 				CB0A43831BED30ED00AAC5E0 /* LZMPublishButton.m in Sources */,
 				CBD6FE1C1BE9A3B8006A0E65 /* NSData+ImageContentType.m in Sources */,
+				CB13FB3B1BEF9F29005FFC94 /* LZMLocationModel.m in Sources */,
 				CBD6FE281BE9A3B8006A0E65 /* UIImageView+HighlightedWebCache.m in Sources */,
 				CB0A43671BEA84A500AAC5E0 /* MJRefreshGifHeader.m in Sources */,
 				CB0A43801BED306D00AAC5E0 /* CYLPlusButton.m in Sources */,
 				CB0A432A1BEA7C6900AAC5E0 /* KxMenu.m in Sources */,
+				CB13FB301BEEF340005FFC94 /* LZMPublishCell.m in Sources */,
 				CB0A435C1BEA84A500AAC5E0 /* MJRefreshAutoFooter.m in Sources */,
 				CB0A43621BEA84A500AAC5E0 /* MJRefreshAutoNormalFooter.m in Sources */,
 				CB0A435E1BEA84A500AAC5E0 /* MJRefreshComponent.m in Sources */,

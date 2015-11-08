@@ -7,7 +7,21 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "LZMPublishParser.h"
+@class LZMPublishRequest;
+
+typedef void (^publishRequestCompletionHandler)(LZMPublishRequest *request);
 
 @interface LZMPublishRequest : NSObject
+@property (nonatomic, strong) LZMPublishModel *publishModel;
+@property (nonatomic, strong) NSError *error;
+- (void)publishRequestWithUserId:(NSString *)userid
+                           token:(NSString *)token
+                       longitude:(NSString *)longitude
+                        latitude:(NSString *)latitude
+                           title:(NSString *)title
+                            data:(NSData *)data
+                        location:(NSString *)location
+               completionHandler:(publishRequestCompletionHandler)handler;
 
 @end

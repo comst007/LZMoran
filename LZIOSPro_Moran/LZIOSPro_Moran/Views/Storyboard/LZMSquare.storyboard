@@ -29,11 +29,18 @@
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JiK-9u-jsa">
                                                     <rect key="frame" x="0.0" y="6" width="320" height="25"/>
                                                     <subviews>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="location" translatesAutoresizingMaskIntoConstraints="NO" id="F36-w7-Yrk">
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="location" translatesAutoresizingMaskIntoConstraints="NO" id="F36-w7-Yrk">
                                                             <rect key="frame" x="6" y="7" width="12" height="12"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="12" id="a6X-U6-gfL"/>
+                                                                <constraint firstAttribute="width" constant="12" id="kLS-ZA-ZOz"/>
+                                                            </constraints>
                                                         </imageView>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="上海市徐汇区虹梅路2007号" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YJT-cY-2iS">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="上海市徐汇区虹梅路2007号" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YJT-cY-2iS">
                                                             <rect key="frame" x="26" y="5" width="286" height="16"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="16" id="ifY-lA-Enh"/>
+                                                            </constraints>
                                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
                                                             <color key="textColor" red="0.34343434343434343" green="0.34343434343434343" blue="0.34343434343434343" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
@@ -42,6 +49,11 @@
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="25" id="3m3-Be-GIr"/>
+                                                        <constraint firstItem="F36-w7-Yrk" firstAttribute="leading" secondItem="JiK-9u-jsa" secondAttribute="leading" constant="6" id="EnI-Gz-PfM"/>
+                                                        <constraint firstAttribute="centerY" secondItem="F36-w7-Yrk" secondAttribute="centerY" id="bcK-AZ-zan"/>
+                                                        <constraint firstAttribute="centerY" secondItem="YJT-cY-2iS" secondAttribute="centerY" id="lUN-t4-y7y"/>
+                                                        <constraint firstItem="YJT-cY-2iS" firstAttribute="leading" secondItem="F36-w7-Yrk" secondAttribute="trailing" constant="8" id="nNi-CE-JtY"/>
+                                                        <constraint firstAttribute="trailing" secondItem="YJT-cY-2iS" secondAttribute="trailing" constant="8" id="qBB-aA-gMO"/>
                                                     </constraints>
                                                     <userDefinedRuntimeAttributes>
                                                         <userDefinedRuntimeAttribute type="boolean" keyPath="translatesAutoresizingMaskIntoConstraints" value="NO"/>
