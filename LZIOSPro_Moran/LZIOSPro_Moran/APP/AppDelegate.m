@@ -9,7 +9,7 @@
 #import "AppDelegate.h"
 #import "LZMMyViewController.h"
 #import "LZMLoginViewControllers.h"
-#import "LZMViewDetailController.h"
+#import "LZMSquareController.h"
 #import "LZMMainTabBarController.h"
 @interface AppDelegate ()
 @property (nonatomic, strong) LZMLoginViewControllers *loginVC;
@@ -34,7 +34,7 @@
     
    // UIViewController *vc = [[UIViewController alloc] init];
     UIStoryboard *vcSB = [UIStoryboard storyboardWithName:@"LZMSquare" bundle:[NSBundle mainBundle]];
-    LZMViewDetailController *vc = [vcSB instantiateViewControllerWithIdentifier:@"squareStoryboard"];
+    LZMSquareController *vc = [vcSB instantiateViewControllerWithIdentifier:@"squareStoryboard"];
     
     
     

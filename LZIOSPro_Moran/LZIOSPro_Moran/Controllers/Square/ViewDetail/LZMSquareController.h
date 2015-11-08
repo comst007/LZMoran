@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface LZMViewDetailController : UIViewController
+@interface LZMSquareController : UIViewController
 
 @end

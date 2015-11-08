@@ -6,7 +6,7 @@
 //  Copyright (c) 2015年 com.comst1314. All rights reserved.
 //
 
-#import "LZMViewDetailController.h"
+#import "LZMSquareController.h"
 #import "LZMGlobal.h"
 #import "LZMSquareRequest.h"
 #import "MBProgressHUD.h"
@@ -15,7 +15,7 @@
 #import <CoreLocation/CoreLocation.h>
 #import "KxMenu.h"
 #import "MJRefresh.h"
-@interface LZMViewDetailController ()<UITableViewDelegate, UITableViewDataSource, CLLocationManagerDelegate>
+@interface LZMSquareController ()<UITableViewDelegate, UITableViewDataSource, CLLocationManagerDelegate>
 
 
 @property (weak, nonatomic) IBOutlet UITableView *tableview;
@@ -28,7 +28,7 @@
 @property (nonatomic, strong) NSMutableDictionary *locationDic;
 @end
 
-@implementation LZMViewDetailController
+@implementation LZMSquareController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

@@ -73,7 +73,7 @@
 		CBD6FDE11BE91D7E006A0E65 /* LZMReNameRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = CBD6FDE01BE91D7E006A0E65 /* LZMReNameRequest.m */; };
 		CBD6FDE41BE9296F006A0E65 /* LZMFollowAndHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBD6FDE31BE9296F006A0E65 /* LZMFollowAndHomeViewController.m */; };
 		CBD6FDE71BE92F1D006A0E65 /* LZMChangeImageRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = CBD6FDE61BE92F1D006A0E65 /* LZMChangeImageRequest.m */; };
-		CBD6FDEB1BE98400006A0E65 /* LZMViewDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBD6FDEA1BE98400006A0E65 /* LZMViewDetailController.m */; };
+		CBD6FDEB1BE98400006A0E65 /* LZMSquareController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBD6FDEA1BE98400006A0E65 /* LZMSquareController.m */; };
 		CBD6FDEE1BE984A7006A0E65 /* LZMSquareCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CBD6FDED1BE984A7006A0E65 /* LZMSquareCell.m */; };
 		CBD6FDF11BE984DA006A0E65 /* LZMSquareCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CBD6FDF01BE984DA006A0E65 /* LZMSquareCollectionCell.m */; };
 		CBD6FDF51BE986F1006A0E65 /* LZMSquareRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = CBD6FDF41BE986F1006A0E65 /* LZMSquareRequest.m */; };
@@ -228,8 +228,8 @@
 		CBD6FDE31BE9296F006A0E65 /* LZMFollowAndHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZMFollowAndHomeViewController.m; sourceTree = "<group>"; };
 		CBD6FDE51BE92F1D006A0E65 /* LZMChangeImageRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZMChangeImageRequest.h; sourceTree = "<group>"; };
 		CBD6FDE61BE92F1D006A0E65 /* LZMChangeImageRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZMChangeImageRequest.m; sourceTree = "<group>"; };
-		CBD6FDE91BE98400006A0E65 /* LZMViewDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZMViewDetailController.h; sourceTree = "<group>"; };
-		CBD6FDEA1BE98400006A0E65 /* LZMViewDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZMViewDetailController.m; sourceTree = "<group>"; };
+		CBD6FDE91BE98400006A0E65 /* LZMSquareController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZMSquareController.h; sourceTree = "<group>"; };
+		CBD6FDEA1BE98400006A0E65 /* LZMSquareController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZMSquareController.m; sourceTree = "<group>"; };
 		CBD6FDEC1BE984A7006A0E65 /* LZMSquareCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZMSquareCell.h; sourceTree = "<group>"; };
 		CBD6FDED1BE984A7006A0E65 /* LZMSquareCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZMSquareCell.m; sourceTree = "<group>"; };
 		CBD6FDEF1BE984DA006A0E65 /* LZMSquareCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZMSquareCollectionCell.h; sourceTree = "<group>"; };
@@ -745,8 +745,8 @@
 		CBD6FDE81BE983D7006A0E65 /* ViewDetail */ = {
 			isa = PBXGroup;
 			children = (
-				CBD6FDE91BE98400006A0E65 /* LZMViewDetailController.h */,
-				CBD6FDEA1BE98400006A0E65 /* LZMViewDetailController.m */,
+				CBD6FDE91BE98400006A0E65 /* LZMSquareController.h */,
+				CBD6FDEA1BE98400006A0E65 /* LZMSquareController.m */,
 			);
 			path = ViewDetail;
 			sourceTree = "<group>";
@@ -909,7 +909,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CBD6FDD21BE8E3CE006A0E65 /* LZMGlobal.m in Sources */,
-				CBD6FDEB1BE98400006A0E65 /* LZMViewDetailController.m in Sources */,
+				CBD6FDEB1BE98400006A0E65 /* LZMSquareController.m in Sources */,
 				CBD6FE221BE9A3B8006A0E65 /* SDWebImageManager.m in Sources */,
 				CB13FB351BEF34ED005FFC94 /* LZMPublishModel.m in Sources */,
 				CB13FB381BEF3520005FFC94 /* LZMPublishParser.m in Sources */,

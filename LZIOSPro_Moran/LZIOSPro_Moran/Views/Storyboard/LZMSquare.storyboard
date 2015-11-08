@@ -4,10 +4,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <scenes>
-        <!--View Detail Controller-->
+        <!--Square Controller-->
         <scene sceneID="eSD-Qe-Ymg">
             <objects>
-                <viewController storyboardIdentifier="squareStoryboard" useStoryboardIdentifierAsRestorationIdentifier="YES" id="plP-Gh-nRA" customClass="LZMViewDetailController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="squareStoryboard" useStoryboardIdentifierAsRestorationIdentifier="YES" id="plP-Gh-nRA" customClass="LZMSquareController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="652-bU-hhz"/>
                         <viewControllerLayoutGuide type="bottom" id="3hZ-0n-Z4O"/>
