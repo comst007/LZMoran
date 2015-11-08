@@ -9,6 +9,7 @@
 #import "LZMMainTabBarController.h"
 #import "MBProgressHUD.h"
 #import "LZMPublishViewController.h"
+#import "LZMViewDetailController.h"
 @interface LZMMainTabBarController ()<UIActionSheetDelegate, UINavigationControllerDelegate, UIImagePickerControllerDelegate>
 @property (nonatomic, strong) UIImagePickerController *pickController;
 @end
@@ -18,6 +19,7 @@
 - (void)viewDidLoad {
     
     [super viewDidLoad];
+    
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(addview:) name:@"publishNotification" object:nil];
     
 }

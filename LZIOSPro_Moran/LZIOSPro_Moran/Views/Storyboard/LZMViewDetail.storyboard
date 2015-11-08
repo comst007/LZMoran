@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <scenes>
+        <!--View Detail Controller-->
+        <scene sceneID="GQD-Q4-jN4">
+            <objects>
+                <viewController storyboardIdentifier="detailViewStoyboard" hidesBottomBarWhenPushed="YES" useStoryboardIdentifierAsRestorationIdentifier="YES" id="7zR-iE-k6W" customClass="LZMViewDetailController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="yOD-Zx-wsm"/>
+                        <viewControllerLayoutGuide type="bottom" id="2x2-6z-nwK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ler-xM-USN">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LE6-Id-3tv">
+                                <rect key="frame" x="0.0" y="64" width="320" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="ihV-Po-CJn"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="LE6-Id-3tv" firstAttribute="top" secondItem="ler-xM-USN" secondAttribute="top" constant="64" id="Ydc-Fc-0Tb"/>
+                            <constraint firstAttribute="trailing" secondItem="LE6-Id-3tv" secondAttribute="trailing" id="Zd7-d6-ZMp"/>
+                            <constraint firstItem="LE6-Id-3tv" firstAttribute="leading" secondItem="ler-xM-USN" secondAttribute="leading" id="jnu-B0-ZJk"/>
+                        </constraints>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="photoImageview" destination="LE6-Id-3tv" id="yUO-SM-jOR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gkX-N9-ukJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

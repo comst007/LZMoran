@@ -33,6 +33,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    self.navigationController.navigationBar.tintColor = [UIColor whiteColor];;
+    self.navigationController.navigationBar.titleTextAttributes = @{NSForegroundColorAttributeName : [UIColor whiteColor]};
     self.titleButton = [UIButton buttonWithType:UIButtonTypeCustom];
     [self.titleButton setTitle:@"全部" forState:UIControlStateNormal];
     self.titleButton.frame = CGRectMake(0, 0, 200, 35);
@@ -211,6 +214,13 @@
     return cell;
 }
 
+
+- (void)showDetailImage{
+    UIStoryboard *SB = [UIStoryboard storyboardWithName:@"LZMViewDetail" bundle:[NSBundle mainBundle]];
+    LZMViewDetailController *detailVC = [SB instantiateViewControllerWithIdentifier:@"detailViewStoyboard"];
+    detailVC.pictureModel = self.pictureModel;
+    [self.navigationController pushViewController:detailVC animated:YES];
+}
 
 
 @end

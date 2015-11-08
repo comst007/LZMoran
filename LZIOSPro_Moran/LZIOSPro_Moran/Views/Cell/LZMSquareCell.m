@@ -10,6 +10,7 @@
 #import "LZMSquareCollectionCell.h"
 #import "LZMPictureModel.h"
 #import "UIImageView+WebCache.h"
+#import "AppDelegate.h"
 @implementation LZMSquareCell
 
 - (void)awakeFromNib {
@@ -46,6 +47,13 @@
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
     LZMPictureModel *model = self.dataArr[indexPath.row];
+    
+    AppDelegate *appDelegate = [UIApplication sharedApplication].delegate;
+    appDelegate.squareVC.pictureModel = model;
+    
+    [appDelegate.squareVC showDetailImage];
+    //appDelegate.squareVC
+    
     NSLog(@"%li", indexPath.row);
 }
 

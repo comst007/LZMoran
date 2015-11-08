@@ -7,13 +7,9 @@
 //
 
 #import "AppDelegate.h"
-#import "LZMMyViewController.h"
-#import "LZMLoginViewControllers.h"
-#import "LZMSquareController.h"
-#import "LZMMainTabBarController.h"
+
 @interface AppDelegate ()
-@property (nonatomic, strong) LZMLoginViewControllers *loginVC;
-@property (nonatomic, strong) LZMMainTabBarController *tabBarVC;
+
 
 @end
 
@@ -35,7 +31,7 @@
    // UIViewController *vc = [[UIViewController alloc] init];
     UIStoryboard *vcSB = [UIStoryboard storyboardWithName:@"LZMSquare" bundle:[NSBundle mainBundle]];
     LZMSquareController *vc = [vcSB instantiateViewControllerWithIdentifier:@"squareStoryboard"];
-    
+    self.squareVC = vc;
     
     
     UINavigationController *nvc = [[UINavigationController alloc] initWithRootViewController:vc];
