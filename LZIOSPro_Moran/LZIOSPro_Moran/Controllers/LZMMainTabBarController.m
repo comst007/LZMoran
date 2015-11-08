@@ -71,7 +71,9 @@
         UIStoryboard *SB = [UIStoryboard storyboardWithName:@"LZMPublish" bundle:[NSBundle mainBundle]];
         LZMPublishViewController *pVC = [SB instantiateViewControllerWithIdentifier:@"publishStoryboard"];
         pVC.imagePhoto = image;
-        [weakSelf.navigationController pushViewController:pVC animated:YES];
+        
+        UINavigationController *nVC = [[UINavigationController alloc] initWithRootViewController:pVC];
+        [weakSelf presentViewController:nVC animated:YES completion:nil];
     }];
 }
 
@@ -88,5 +90,7 @@
     
     [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
+
+
 
 @end
