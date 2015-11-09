@@ -64,7 +64,7 @@
     self.navigationController.navigationBar.titleTextAttributes = @{NSForegroundColorAttributeName : [UIColor whiteColor]};
     self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
     self.navigationItem.title = @"发布照片";
-    UIBarButtonItem *buttonItem = [[UIBarButtonItem alloc] initWithTitle:@"发布" style:UIBarButtonItemStylePlain target:self action:@selector(publishButtonClick)];
+    UIBarButtonItem *buttonItem = [[UIBarButtonItem alloc] initWithTitle:@"发布" style:UIBarButtonItemStylePlain target:self action:@selector(publishButtonClick:)];
     self.navigationItem.rightBarButtonItem = buttonItem;
     
     UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithTitle:@"返回" style:UIBarButtonItemStylePlain target:self action:@selector(bacButtonClick)];
@@ -137,14 +137,46 @@
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
+- (BOOL)validateText:(NSString *)text{
+    
+    NSString *str1 = [text stringByReplacingOccurrencesOfString:@" "  withString:@""];
+    if ([str1 length] == 0) {
+        return NO;
+    }
+    NSString *str2 = [str1 stringByReplacingOccurrencesOfString:@"\n" withString:@""];
+    
+    if ([str2 length] == 0) {
+        return NO;
+    }
+    
+    NSString *str3 = [text stringByReplacingOccurrencesOfString:@"\t" withString:@""];
+    if ([str3 length] == 0) {
+        return NO;
+    }
+    return YES;
+}
 
-- (void)publishButtonClick{
+- (void)publishButtonClick:(UIBarButtonItem *)btn{
+    
+    self.navigationController.navigationBar.userInteractionEnabled = NO;
     
     if ([self.wordsTextview.text isEqualToString:@"你想说的话"]) {
         [self showError:@"请写上你的留言"];
+        self.navigationController.navigationBar.userInteractionEnabled = YES;
         return;
     }
+    if ([self.wordsTextview.text length] > 25 || [self.wordsTextview.text length] == 0) {
+        [self showError:@"字数不能超过25也不能为空！"];
+        self.navigationController.navigationBar.userInteractionEnabled = YES;
+        return ;
+    }
     
+    if ([self validateText:self.wordsTextview.text] == NO) {
+        
+        [self showError:@"输入有效字符"];
+        self.navigationController.navigationBar.userInteractionEnabled = YES;
+        return ;
+    }
     if ([self.activity isAnimating]) {
         [self.activity stopAnimating];
     }
@@ -160,7 +192,7 @@
         dispatch_async(dispatch_get_main_queue(), ^{
             
             [weakSelf.activity stopAnimating];
-            
+            weakSelf.navigationController.navigationBar.userInteractionEnabled = YES;
             if (request.error) {
                 [weakSelf showError:@"publish fail"];
             }else{
@@ -364,6 +396,13 @@
 }
 
 - (BOOL)textView:(UITextView *)textView shouldChangeTextInRange:(NSRange)range replacementText:(NSString *)text{
+    
+    NSLog(@"textview: %@, range:%@, replace:%@", textView.text, NSStringFromRange(range), text);
+    if ([textView.text length] >= 25) {
+        [textView resignFirstResponder];
+        return NO;
+    }
+    
     if ([text isEqualToString:@"\n"]) {
         [textView resignFirstResponder];
         return NO;
@@ -374,7 +413,7 @@
     if (textView.text.length >= 25) {
         [textView resignFirstResponder];
     }
-    self.numberLabel.text = [NSString stringWithFormat:@"%lu/25", textView.text.length];
+    self.numberLabel.text = [NSString stringWithFormat:@"%i/25", (int)textView.text.length];
 }
 
 - (void)textViewDidBeginEditing:(UITextView *)textView{
@@ -401,7 +440,7 @@
     
     MBProgressHUD *alert = [[MBProgressHUD alloc] initWithView:self.view];
     alert.mode = MBProgressHUDModeText;
-    alert.minShowTime = 3;
+    alert.minShowTime = 1.5;
     alert.labelText = msg;
     [self.view addSubview:alert];
     alert.removeFromSuperViewOnHide = YES;

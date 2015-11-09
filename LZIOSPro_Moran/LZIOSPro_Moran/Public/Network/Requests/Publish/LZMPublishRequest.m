@@ -53,8 +53,9 @@
             //NSLog(@"%@", [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding]);
             LZMPublishParser *parser = [[LZMPublishParser alloc] init];
             weakSelf.publishModel = [parser parsejson:data];
-            handler(weakSelf);
+           
         }
+         handler(weakSelf);
     }];
     
     [self.publishTask resume];
